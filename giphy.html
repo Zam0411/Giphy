@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+<body>
+
+        <div id="gifButtonsView" class="container">
+            </div>
+             <!-- Main Container  -->
+            <div class="container">
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                    <!-- Gifs  -->
+                    <div id="gifsView"></div>
+                </div>
+                 <!-- Animal Submission Form  -->
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <form id="gif-form" role="form">
+                        <h2><legend>Animal Submission</legend></h2>
+                        <div class="form-group">
+                            <label for="animal-input">Add your animal below</label>
+                            <input type="text" id="animal-input">
+                        </div>
+                        <input id="addGif" type="submit" value="Add your animal" class="btn btn-primary">
+                        <input id="removeGif" type="submit" value="Remove last animal" class="btn btn-primary">
+                    </form>    
+                </div>
+            </div>
+
+            <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+            <script src="assets/giphy.js"></script>
+</body>
+</html>
